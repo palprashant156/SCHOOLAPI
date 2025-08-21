@@ -10,6 +10,7 @@ app.get('/',(req,res)=>{
   res.send('server is running');
 });
 
+
 app.get('/api/users',(req,res)=>{
   res.json([
     {
@@ -124,6 +125,7 @@ app.get('/api/users',(req,res)=>{
     }
   ]);
 });
+
 
 app.listen(PORT,()=>{
   console.log('backend is running')
